@@ -34,6 +34,7 @@ export class PokemonService {
     
     let pokemon: Pokemon;
 
+    // ID
     if( !isNaN( +term ) )
     {
       pokemon = await this.pokemonModel.findOne({ no: term })
