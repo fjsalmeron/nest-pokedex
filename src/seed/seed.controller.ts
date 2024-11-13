@@ -8,6 +8,7 @@ export class SeedController {
 
   @Get()
   executeSEED() {
+    console.log('Estamos llamando al executeSEED');
     return this.seedService.executeSEED();
   }
 
